@@ -1,0 +1,114 @@
+three setting levels of git 
+
+system - setting for all users 
+gloabal - setting for all respository users 
+local setting applied to current repository 
+
+
+
+Commands 
+git config --global -e
+opens git config file 
+
+git config -help -> shows list of git command and its operation 
+
+$ git init
+Initialized empty Git repository in C:/Users/ishmo/Desktop/Git and Github/Moon/.git/
+
+It is hidden in your system
+
+$ ls -a
+to see all repository adn files 
+
+
+how git workflow works 
+
+first we make changes or create a file 
+
+then we add file to the staging area by using 
+
+
+add command 
+
+Staging area acts like mediator between user and repository it gives us to chnace to review the file and then make initial commit 
+
+
+then after reviewing the changes we commit the changes to the repository 
+
+using commit commad 
+
+eg:- git commit -m "Bugs fixed"
+
+the commit command takes the snapshot of the code which has following attributes like id, author, changes made , time , etc 
+
+and also after commiting the file remains in staging area inside our system hidden work flow implmentation
+
+by this we can track changes of our files 
+
+from staging area we can revert our changes by using unstaged command and then again properly modify file and then put back to staging area 
+
+that is how git work flow works
+
+
+git command 
+
+$ git add file.txt [space] file2.txt
+---->  we can add multiple files by giving spaces between name of the files to the staging area 
+
+
+$git add .  adds entire directory to the staging area 
+
+$git add *.txt -> add all text file to the staging area 
+
+
+commit best pratices 
+
+not commit too often for small changes liek creating a file 
+
+commit should not be too big or too small 
+
+we can always go back and recover the code
+
+commit typos and bug fixes seperately 
+
+meaning full message 
+
+and commit often because you always can recover the code 
+
+
+git commands 
+
+git commit -am "changes made"
+
+it commits all modified file to the repository
+  without goign to staging area 
+
+
+================================
+removing files 
+
+command -> rm file.txt
+file removed 
+
+after that we have to also remove the file.txt from the staging area hence we know the files are there in staging area after making commits and changes in our system 
+
+remove file from staging area by add command 
+
+add file.txt 
+and then make commit  
+we can add multiple file in the add command as well in remove command 
+
+
+to directly remove the file without making file to staging area and make commit the file changes 
+
+we can write the command 
+
+git rm fileName .....multiple fileNames ]
+
+
+
+
+
+
+
+
